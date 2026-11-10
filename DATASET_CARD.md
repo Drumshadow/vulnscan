@@ -16,7 +16,7 @@ pretty_name: vulnscan PR security review benchmark
 
 A benchmark for **AI security review of code changes**. Every advisory was published on or after **2026-07-01**.
 An advisory date does not bound when the fix became public: in the test split, 66 of 163 fixes were committed before
-that date. Use `evidence/test_nc_fix_after_cutoff_pairs.json` for the 97 pairs whose fix came after it. No claim is
+that date. Use `subsets/test_nc_fix_after_cutoff_pairs.json` (also `evidence/` in the GitHub repo) for the 97 pairs whose fix came after it. No claim is
 made about any model's training data. The split unit is the repository, and a build-time leak check aborts on any
 repository, commit or advisory overlap between splits (0 shared resolved SHAs across all splits).
 
