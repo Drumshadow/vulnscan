@@ -53,7 +53,8 @@ DGX Spark.
 ## Roadmap (in progress, each ships when done)
 
 Go/Rust wave (built, frozen, running), C/C++ wave (building), PoC verification v2 (coverage-gated
-confirmation), a GLM-5.3-Flash reference arm.
+confirmation). A large open-weights reference model was considered and dropped; the frozen benchmark makes it easy
+to add later.
 
 ## License
 
