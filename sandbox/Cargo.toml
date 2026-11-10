@@ -1,0 +1,16 @@
+[package]
+name = "vs-sandbox"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Run one PoC command under the gateway's Landlock+seccomp confinement, with rlimits and a wall-clock kill"
+
+[dependencies]
+# Reuse the gateway's proven confinement (Landlock default-deny, no_new_privs, seccomp incl. no AF_INET/AF_INET6).
+gateway-exec = { path = "/srv/gateway/gateway/crates/gateway-exec" }
+anyhow = "1"
+libc = "0.2"
+serde_json = "1"
+
+[profile.release]
+strip = true

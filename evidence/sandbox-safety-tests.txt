@@ -1,0 +1,8 @@
+PASS runs python
+PASS inet socket denied
+PASS write outside workspace denied
+PASS write inside workspace allowed
+PASS read outside ro paths denied
+PASS wall clock kill
+PASS process count capped
+PASS memory capped (cgroup, no swap; PoC killed, runner reports)
